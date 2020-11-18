@@ -12,15 +12,15 @@ function SuperMap(input, cb) {
 }
 
 const callbackFunction = (value) => {
-    return value.length > 5;
+    return value > 50;
 }
 
-const obj = {
-    name: 'Abinav',
-    age: '26'
+const ageMap = {
+    rick: 73,
+    morty: 14,
 };
 
-const arr = ['Abinav', '26'];
+const ageArray = [73, 14];
 
-const resultForObject = SuperMap(obj, callbackFunction);
-const resultForArr = SuperMap(arr, callbackFunction);
+const resultForObject = SuperMap(ageMap, callbackFunction);
+const resultForArr = SuperMap(ageArray, callbackFunction);
