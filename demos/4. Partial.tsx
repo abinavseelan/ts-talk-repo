@@ -17,7 +17,7 @@ const useQueryParams = () => {
         return agg;
     }, {});
 
-    return queryParams as Partial<typeof allowedParams>;
+    return queryParams;
 }
 
 const Container = () => {

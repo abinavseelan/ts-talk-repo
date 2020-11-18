@@ -2,7 +2,6 @@ export { };
 
 type Account = {
     name: string;
-    createdAt: string;
 }
 
 type Data = {
@@ -13,15 +12,13 @@ type Data = {
 
 function getData(): Data {
     return {
-        name: 'Abinav',
-        age: 26,
+        name: 'Avatar Aang',
+        age: 110,
         accounts: [{
             name: 'Test account',
-            createdAt: 'someDay',
         }],
     };
 }
-
 
 const ProfileCard = (props) => {
     return <span>props.data</span>;
@@ -37,16 +34,11 @@ const Container = () => {
     return (
         <>
             <ProfileCard
-                data={{
-                    name: data.name,
-                    age: data.age,
-                }}
+                data={{}}
             />
 
             <AccountList
-                data={{
-                    accounts: data.accounts
-                }}
+                data={{}}
             />
         </>
     )

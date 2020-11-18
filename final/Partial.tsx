@@ -17,7 +17,7 @@ const useQueryParams = () => {
         return agg;
     }, {});
 
-    return queryParams;
+    return queryParams as Record<keyof typeof allowedParams, string>;
 }
 
 const Container = () => {

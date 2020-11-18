@@ -10,7 +10,9 @@ const Card = (props) => {
 
 const Wrapper = () => {
     return (
-        <Card 
+        <Card
+            id='card1'
+            className='card'
             dangerouslySetInnerHTML={{
                 __html: '<p>This is unsafe</p>'
             }}
